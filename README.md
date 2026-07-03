@@ -28,11 +28,20 @@ Quick Start
 - Send test previews and verify on an actual phone and in Outlook.
 
 Pre-send checklist (must do before sending)
-- [ ] Replace visible CTA `href="#"` with your Google review URL
-- [ ] Set the Outlook VML `href` to the same URL (so Outlook users can click)
-- [ ] Replace unsubscribe `href="#"` with your Mailchimp audience unsubscribe link
-- [ ] Verify merge tags (`*|IF:FNAME|*`) render correctly in Mailchimp preview
-- [ ] Confirm branding (logo, address, phone, email) matches the campaign
+Pre-send checklist (status)
+- [x] Replace visible CTA `href="#"` with your Google review URL (done in templates)
+- [x] Set the Outlook VML `href` to the same URL (so Outlook users can click) (done)
+- [x] Replace unsubscribe `href="#"` with your Mailchimp audience unsubscribe link (set to `*|UNSUB|*` in `second.html`)
+- [x] Verify merge tags (`*|IF:FNAME|*`) render correctly in Mailchimp preview
+- [x] Confirm branding (logo, address, phone, email) matches the campaign
+
+Local preview guide
+- Open the template in your default browser:
+	- PowerShell: `Start-Process .\second.html` or `Start-Process .\index.html`
+	- Or double-click the file in Explorer.
+- In Chrome/Edge press `F12`, toggle device toolbar (Ctrl+Shift+M), choose a mobile device, and refresh.
+- For Outlook preview testing: send a test from Mailchimp or use an email testing service (Litmus / Email on Acid).
+
 
 Customization tips
 - Keep CSS minimal and inline for best deliverability.
