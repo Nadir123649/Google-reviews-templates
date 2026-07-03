@@ -1,36 +1,45 @@
 # Google Reviews Email Templates
 
-Professional Mailchimp-compatible HTML email templates for Google review outreach.
+![A Partner In Caring](https://res.cloudinary.com/dgstbxgwt/image/upload/v1783092919/image_10_bpi04r.png)
 
-## Included files
+Beautiful, Mailchimp-ready HTML email templates for requesting Google reviews.
+Designed for reliability across Outlook, Gmail, and mobile clients.
 
+**Included files**
 - `index.html` — Noah's Dove review request email
 - `second.html` — A Partner In Caring review request email
 
-## What’s included
+**Highlights**
+- Email-safe table layout and inline CSS
+- Outlook VML buttons for reliable CTA rendering
+- Responsive media queries for small screens
+- Hidden preheader copy for better inbox previews
+- Mailchimp merge-tag friendly personalization
 
-- Email-safe HTML structure with table-based layout
-- Outlook-friendly VML button support
-- Responsive mobile styles for screens under 600px
-- Hidden preheader text for inbox preview
-- Mailchimp merge tag support for recipient personalization
+**Mailchimp compatibility**
+- No `@import` font declarations (Mailchimp rejects external font imports)
+- Templates import cleanly into Mailchimp's custom HTML editor
+- Images use absolute `https://` URLs and include `alt` text
 
-## Compatibility
+Quick Start
+- Edit the template you want to use (`index.html` or `second.html`).
+- Replace the CTA `href` and unsubscribe `href` with your actual links.
+- Import the HTML into Mailchimp (Campaigns → Email → Code your own).
+- Send test previews and verify on an actual phone and in Outlook.
 
-- Both templates are ready for Mailchimp import
-- `@import` font declarations have been removed
-- Inline and embedded CSS is email-client safe
-- `second.html` has been cleaned for A Partner In Caring branding
+Pre-send checklist (must do before sending)
+- [ ] Replace visible CTA `href="#"` with your Google review URL
+- [ ] Set the Outlook VML `href` to the same URL (so Outlook users can click)
+- [ ] Replace unsubscribe `href="#"` with your Mailchimp audience unsubscribe link
+- [ ] Verify merge tags (`*|IF:FNAME|*`) render correctly in Mailchimp preview
+- [ ] Confirm branding (logo, address, phone, email) matches the campaign
 
-## Usage
+Customization tips
+- Keep CSS minimal and inline for best deliverability.
+- Avoid JavaScript, forms, or external trackers inside templates.
+- Use hosted images (CDN) to ensure fast, secure loading.
 
-1. Open the HTML file in your editor.
-2. Replace placeholder CTA and unsubscribe links with your real URLs.
-3. Paste the HTML into Mailchimp’s code editor or import as a custom template.
-4. Test with Mailchimp preview and a real device before sending.
+Credits & support
+- Built for quick Google review outreach. If you want me to update CTA/unsubscribe links or run a final preview, tell me the correct URLs and I’ll apply them.
 
-## Notes
-
-- `index.html` is branded for Noah's Dove.
-- `second.html` is branded for A Partner In Caring.
-- Keep personalization merge tags intact for best results.
+Thank you — ready to import and send!
